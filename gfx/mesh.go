@@ -31,7 +31,7 @@ type TexCoordSet struct {
 	// The slice of texture coordinates for the set.
 	Slice []TexCoord
 
-	// Weather or not the texture coordinates of this set have changed since
+	// Whether or not the texture coordinates of this set have changed since
 	// the last time the mesh was loaded. If set to true the device should
 	// take note and re-upload the data slice to the graphics hardware.
 	Changed bool
@@ -57,7 +57,7 @@ type VertexAttrib struct {
 	//  [][]gfx.TexCoord
 	Data interface{}
 
-	// Weather or not the per-vertex data (see the Data field) has changed
+	// Whether or not the per-vertex data (see the Data field) has changed
 	// since the last time the mesh was loaded. If set to true the device
 	// should take note and re-upload the data slice to the device's memory.
 	Changed bool
@@ -164,7 +164,7 @@ type Mesh struct {
 	// should assign values to this field.
 	NativeMesh Destroyable
 
-	// Weather or not this mesh is currently loaded or not.
+	// Whether or not this mesh is currently loaded or not.
 	Loaded bool
 
 	// The primitive type of this mesh. The zero-value (i.e. default value) is
@@ -192,7 +192,7 @@ type Mesh struct {
 	// hardware.
 	Indices []uint32
 
-	// Weather or not the indices have changed since the last time the mesh
+	// Whether or not the indices have changed since the last time the mesh
 	// was loaded. If set to true the device should take note and re-upload the
 	// data slice to the graphics hardware.
 	IndicesChanged bool
@@ -200,7 +200,7 @@ type Mesh struct {
 	// The slice of vertices for the mesh.
 	Vertices []Vec3
 
-	// Weather or not the vertices have changed since the last time the
+	// Whether or not the vertices have changed since the last time the
 	// mesh was loaded. If set to true the device should take note and
 	// re-upload the data slice to the graphics hardware.
 	VerticesChanged bool
@@ -208,7 +208,7 @@ type Mesh struct {
 	// The slice of vertex colors for the mesh.
 	Colors []Color
 
-	// Weather or not the vertex colors have changed since the last time
+	// Whether or not the vertex colors have changed since the last time
 	// the mesh was loaded. If set to true the device should take note
 	// and re-upload the data slice to the graphics hardware.
 	ColorsChanged bool
@@ -216,7 +216,7 @@ type Mesh struct {
 	// The slice of normals for the mesh.
 	Normals []Vec3
 
-	// Weather or not the normals have changed since the last time the
+	// Whether or not the normals have changed since the last time the
 	// mesh was loaded. If set to true the device should take note and
 	// re-upload the data slice to the graphics hardware.
 	NormalsChanged bool
